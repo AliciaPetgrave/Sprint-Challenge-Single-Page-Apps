@@ -1,6 +1,18 @@
 import React, { useEffect, useState } from "react";
 import CharacterCard from "./CharacterCard"
 import Axios from "axios";
+import {Link} from "react-router-dom"
+import styled from "styled-components"
+
+const List = styled.div`
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+`
+
+const Head = styled.h2`
+text-align:center;
+`
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -21,7 +33,8 @@ export default function CharacterList() {
 
   return (
     <section className="character-list">
-      <h2>Characters</h2>
+      <Head>Characters</Head>
+    <List>
       {chars.map(character =>{
         return (
           <CharacterCard
@@ -30,6 +43,7 @@ export default function CharacterList() {
           photo = {character.image}/>
         )
       })}
+      </List>
     </section>
   );
 }
