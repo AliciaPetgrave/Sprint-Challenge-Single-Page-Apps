@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: Client-Side routing allows web apps to download, process, and render new data/information for you. Server-Side routing causes the browser to completely reload a webpage/web app when an HTTP request is made or event is triggered. On the other hand, with client-side routing the webpage/ web app reloads new information/updates where it needs to, instead of updating the whole project. It also allows you to download less data to display new content, you can reuse components/elements, etc.
 
 ## Project Set Up
 
