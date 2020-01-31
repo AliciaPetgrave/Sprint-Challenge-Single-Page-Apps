@@ -13,7 +13,7 @@ export default function App() {
   return (
     <Main>
       <Header />
-      <SearchForm/>
+    
       <Route exact path="/"> <WelcomePage /> </Route>
       <Route path="/CharacterList"> <CharacterList /> </Route>
     </Main>
