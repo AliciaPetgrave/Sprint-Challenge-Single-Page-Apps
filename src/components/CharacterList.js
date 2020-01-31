@@ -36,7 +36,7 @@ export default function CharacterList() {
       <Head>Characters</Head>
     <List>
       {chars.map(character =>{
-        return (
+        return ( 
           <CharacterCard
           name = {character.name}
           species = {character.species}

@@ -4,6 +4,7 @@ import CharacterList from "./components/CharacterList"
 import WelcomePage from "./components/WelcomePage"
 import {Route} from "react-router-dom"
 import styled from "styled-components"
+import SearchForm from "./components/SearchForm"
 
 const Main = styled.main`
 background:#15b6b8;
@@ -12,9 +13,9 @@ export default function App() {
   return (
     <Main>
       <Header />
-      <CharacterList/>
-      {/* <Route exact path="/" component={WelcomePage}/> */}
-      <Route path="/characters" component={CharacterList}/>
+      <SearchForm/>
+      <Route exact path="/"> <WelcomePage /> </Route>
+      <Route path="/CharacterList"> <CharacterList /> </Route>
     </Main>
   );
 }
